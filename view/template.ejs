@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   
+</head>
+<body>
+    <table >
+        <thead >
+          <tr>
+            <th>Nome</th>
+            <th>Dúvidas</th>
+            <th>Processos</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+
+            <% if (listaOperadores.length > 0) { %>
+                <% listaOperadores.forEach(operador => {%>
+                    <tr>
+                        <td><%= operador.nome %> </td>
+                        <td><%= operador.duvidas %> </td>
+                        <td><%= operador.autuacao %> </td>
+                        <td><%= operador.total %></td>
+            
+                      </tr>                <%  });%>
+            <% }%>
+
+        </tbody>
+      </table>
+</body>
+</html>
